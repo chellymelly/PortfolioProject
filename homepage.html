@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <!--Header Content Here-->
+    <header class="header"> <!--class assisns a name to an HTML element, used for styling with CSS-->
+        <a href="#" class="logo"><span>Yo</span>hanna</a> 
+        <!--# = link to current page, class will be styled w/> CSS, span will be used for additional styling-->
+    
+        <!--Nav content here-->
+        <nav class="navbar"> <!--creates a nav section with class to be styled later-->
+            <a href="#" class="active">Home</a> 
+            <!--used to style current active link dif from others,helps know which they are viewing -->
+            <a href="#">Resume</a>
+            <a href="#">Experience</a> <!--testimonial, skills, experience: internships, certificates, work, etc.-->
+            <a href="#">Portfolio</a>
+            <a href="#">Playground</a>
+        </nav>
+
+        <a href="#contact" class="contact">Contact Me</a> <!--link to page, class to later edit with css-->
+    </header>
+    
+    <section class="home"> <!-- section with class home, indicating it will contain content related to homepage-->
+        <div class="home-content"> <!--div with class home-content, aka will contain main content of homepage-->
+            <h3> (づ｡◕‿◕｡)づ Hi there! </h3>
+            <h1>I'm <span>Yohanna</span> welcome to my world!</h1> <!-- span element to be styled seperately-->
+            <p>Currently diving into the world of front-end development while pursuing my studies in Political Science and Economics. Back in my Tumblr coding days, I dabbled in front-end work and had tons of fun with it! Now, I'm diving deeper into the world of coding to enhance my skill set and have been absolutely loving the journey. In my spare time, I'm passionate about audio engineering, playing the piano and guitar, and anything related to visual and performing arts. <br><br> Get to know me through my page and let's connect. ♡ </p>
+            
+            <div class="btn-box"> <!--div contains button, underneath home-content so it will be underneath it-->
+                <button class="btn-1">Hire me ☆</button>
+                <button class="btn-2">Experience ★</button>
+            </div>
+        </div>
+        <div class="img-box">
+            <img src="portfolio_image.jpeg" alt="portfolio_image">
+        </div>
+    </section>
+    
+    <!--new section for ABOUT-->
+    <section class="about" id="about"> <!--creates section for about me image, id here creates a #about me that i can link footer to-->
+        <div class="about-img">
+            <img src="about-img.png" alt="about_me_image">
+        </div>
+        <div class="about-content"> <!--creates section for about me content-->
+            <h2 class="heading">About<span>Me</span></h2> <!--span to edit seperately, will have already span editing to it from above-->
+            <h3>Frontend <span>Developer</span></h3>
+            <p>meow meow meow meow meow</p>
+            <a href="#" class="btn-2">Experience</a> <!--link to current page, aka to the btn-2 already createed-->
+        </div>
+    </section>
+
+    <!--new section for contact form-->
+    <section class="contact-form" id="contact">
+        <h2 class="contact-me">Contact <span>Me</span></h2>
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email">
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Phone Number">
+                <input type="text" placeholder="Subject">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Leave Your Message Here °˖✧◝(⁰▿⁰)◜✧˖° "></textarea>
+            <input type="submit" value="Send Message ⤜♡→" class="btn-1">
+        </form>
+    </section>
+    
+    <!-- FOOTER SECTION-->
+    <footer class="footer">
+
+        <div class="social">
+            <a href="https://github.com/chellymelly" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAABJJJREFUaEPtmXmoVVUUxn8igRpl4JBZITmhFRg5IJWC5ogiiiVhKWFFaORQalFCpVQqDjgg4lBEWlkQpiUNSpSE5ICCkEWmjWaoWQ7VH0XuD859HM/b07nnvPd48BY8Hvfuvdde39prf2uvdZvRyKVZI7efJgANfYJlnkAHYCgwCBgMdMqA+xX4NPn7EPi5DPBFAVwHPAmMAnrkNOgosANYBvyQc23N9CIA5gHPAC2r3Ty1bgHwEvBPXl3VAFCYrLeESN69s/MVUg8DH+VRlBfARmBKng2qmPsK8FDsulgAVyfxemes4oLzvgBGmvt1PqQnBsAVwE5gYEhZyeOfAXcD//n0xgBYCzxasnGx6lYCM4oAmAhstihYZ2jzLeA2YBrQNdaizLyfgDWGhvclOeQpi57xwLsu/b4TuAY4Duh/Vu4yGypOK6ITeh5QMqvIb8AJ4F/DWtcDHVNjvwPzgRWp77oD31j2kp7OwF82ED4AS4EnHMht664Ebk6M/sWxTolPQI6Z0DhrmXMRaGX5Xs55IQ+AtoYuf/QkqZi7U01UydvtLQv/AG4ELmTHXIYI8XMeC1qb0zlXjYWBNf97xh8HVscC0OW6waOsD3CgZAA3JaHlUnsQuD0GgIwTK7gkSG0FgD0NvOxZLzIQMdSILYTmmIu02KFEjKKTUazWhegC69mtzG+TSYayN4UAbAEmOBS8B4ytC8tTOl8FHnTssTzLjLYTOAT0ciiwXqSSAU0GXnPo3A6MCZ2AYkx8bRNl5jdLNjirbpjnSf0VcEsIwEngWoeR8s7rDQhA1C0K915ilXpdHEaqfFQJWJfygMdJek4o43sB7AH6OyxcAoil6lL0oFvo2OB7cz+UL7wA3k+KdJuOLz3gygKlQl/FjE32A31DAJSuH/NYo9fpn2VZa9HztzmBFg79ovj7QgCUAzTRJbW4uEQwoTeYHKv6wRtCeomeChglqvukRMOlSjXG7oDOnuYEvg4B0PjebKxlFIsNxgEflwRCnbytwFUefWLHbtlx13Na/Rn1fiqi94k6BKqa0qJwUkPqdJVAdNpqjs2KWC/2EwteJi4A4loZXfHIG8D9xuN3JBQ3IKVF3TR1LQ4D35kn7zZPCOqRdk/iyVuBIZ4Lm7VVYM/EAtC8FxPvVNaI3u5NPijELkvpyfd6hvcLeHNX0vyNcHrNlFXAdNsCX2koKpNX0x0HtVimJslExrbJKBWDvROwTE54O4f1Kq5Ua9cqJ6UjVNsqVD7PbCYPy3g9N1R2jgDE3UpyorkQg6nmzVNPDPeRRQiAbJdR6Vr0A2B0Dg/apvpq3/T82eYeqjvilBgAWrzI9GXmprSonzOzAIgYAHKa6g+vxAKwXWoxjio0FdtqjavfIy63NqAyVoQAqKS1delqgckDQIvVWleL3SXtInOCD8Ajpu7eEPJ8ZTwvAK3rnRTWtp+UigA4YvKIivZc7ZpqAFTAq/2hNkhaqgGgdqLu1LOxXk/PKwJAepQHdOTqUDdPmrgxduhB9m3S+da9yf3bWJEQijGw3uYUPYF6M9S1UROAhj6CRn8ClwA7zL0xrIylkgAAAABJRU5ErkJggg==" alt="github_image"></a>
+        </div>
+    
+        <ul class="list">
+            <li>
+                <a href="#about">About Me</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+            <li>
+                <a href="#">FAQ</a>
+            </li>
+            <li>
+                <a href="#">Services</a>
+            </li>
+            <li>
+                <a href="#">Privacy Policy</a>
+            </li>
+        </ul>
+        <p class="copyright">©️ 2024 Yohanna | All Rights Reserved </p>
+
+        <p class="broughtby">︵‿︵‿୨♡୧‿︵‿︵<br>Brought to you by: Michelle The Shell</p>
+    </footer>
+</body>
+</html>
